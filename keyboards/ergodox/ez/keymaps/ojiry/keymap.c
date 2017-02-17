@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,              KC_Q,          KC_W,            KC_E,    KC_R,            KC_T,             KC_LBRC,
         KC_LCTRL,            KC_A,          KC_S,            KC_D,    KC_F,            KC_G,
         KC_LSFT,             KC_Z,          KC_X,            KC_C,    KC_V,            KC_B,             KC_GRV,
-        DF(BASE),            DF(SYMB),      DF(MDIA),        KC_LALT, GUI_T(KC_LANG2),
+        MO(BASE),            MO(SYMB),      MO(MDIA),        KC_LALT, GUI_T(KC_LANG2),
                                                                                        ALT_T(KC_APP),    LALT(LGUI(KC_LEFT)),
                                                                                                          KC_HOME,
                                                                       GUI_T(KC_BSPC),  LT(SYMB, KC_DEL), KC_END,
@@ -74,8 +74,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        ,-------------.       ,-------------.
  *                                        |Animat|Reset |       |Toggle|Solid |
  *                                 ,------|------|------|       |------+------+------.
- *                                 |Bright|Bright|      |       |      |Hue-  |Hue+  |
- *                                 |ness- |ness+ |------|       |------|      |      |
+ *                                 |Bright|      |      |       |      |Hue-  |Hue+  |
+ *                                 |ness- |      |------|       |------|      |      |
  *                                 |      |      |      |       |      |      |      |
  *                                 `--------------------'       `--------------------'
  */
@@ -89,7 +89,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
        KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,KC_TRNS,
                                        RGB_MOD,RESET,
                                                KC_TRNS,
-                               RGB_VAD,RGB_VAI,KC_TRNS,
+                               RGB_VAD,KC_TRNS,KC_TRNS,
        // right hand
        KC_TRNS, KC_F6,   KC_F7,  KC_F8,   KC_F9,   KC_F10,  KC_F11,
        KC_TRNS, KC_UP,   KC_7,   KC_8,    KC_9,    KC_ASTR, KC_F12,
