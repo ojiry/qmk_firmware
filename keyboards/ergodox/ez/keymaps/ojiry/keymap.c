@@ -18,7 +18,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 /* Keymap 0: Basic layer
  *
  * ,--------------------------------------------------.           ,--------------------------------------------------.
- * | Esc    |   1  |   2  |   3  |   4  |   5  |      |           |      |   6  |   7  |   8  |   9  |   0  |   -    |
+ * | SWin   |   1  |   2  |   3  |   4  |   5  |      |           |      |   6  |   7  |   8  |   9  |   0  |   -    |
  * |--------+------+------+------+------+-------------|           |------+------+------+------+------+------+--------|
  * | Tab    |   Q  |   W  |   E  |   R  |   T  |  [   |           |   ]  |   Y  |   U  |   I  |   O  |   P  |   =    |
  * |--------+------+------+------+------+------|      |           |      |------+------+------+------+------+--------|
@@ -40,23 +40,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 // Otherwise, it needs KC_*
 [BASE] = KEYMAP(  // layer 0 : default
         // left hand
-        KC_ESC,        KC_1,                KC_2,            KC_3,    KC_4,            KC_5,                KC_NO,
-        KC_TAB,        KC_Q,                KC_W,            KC_E,    KC_R,            KC_T,                KC_LBRC,
-        CTL_T(KC_ESC), KC_A,                KC_S,            KC_D,    KC_F,            KC_G,
-        KC_LSFT,       KC_Z,                KC_X,            KC_C,    KC_V,            KC_B,                KC_GRV,
-        KC_NO,         KC_NO,               KC_NO,           KC_LALT, GUI_T(KC_LANG2),
-                                                                                       LALT(LGUI(KC_LEFT)), LGUI(KC_LBRC),
-                                                                                                            KC_HOME,
-                                                                      GUI_T(KC_BSPC),  LT(SYMB, KC_DEL),    KC_END,
+        S(LGUI(KC_GRV)), KC_1,                KC_2,            KC_3,    KC_4,            KC_5,                KC_NO,
+        KC_TAB,          KC_Q,                KC_W,            KC_E,    KC_R,            KC_T,                KC_LBRC,
+        CTL_T(KC_ESC),   KC_A,                KC_S,            KC_D,    KC_F,            KC_G,
+        KC_LSFT,         KC_Z,                KC_X,            KC_C,    KC_V,            KC_B,                KC_GRV,
+        KC_NO,           KC_NO,               KC_NO,           KC_LALT, GUI_T(KC_LANG2),
+                                                                                         LALT(LGUI(KC_LEFT)), LGUI(KC_LBRC),
+                                                                                                              KC_HOME,
+                                                                        GUI_T(KC_BSPC),  LT(SYMB, KC_DEL),    KC_END,
         // right hand
-        KC_NO,         KC_6,                KC_7,            KC_8,    KC_9,            KC_0,                KC_MINS,
-        KC_RBRC,       KC_Y,                KC_U,            KC_I,    KC_O,            KC_P,                KC_EQL,
-                       KC_H,                KC_J,            KC_K,    KC_L,            KC_SCLN,             KC_QUOT,
-        KC_BSLS,       KC_N,                KC_M,            KC_COMM, KC_DOT,          KC_SLSH,             KC_RSFT,
-                                            GUI_T(KC_LANG1), KC_NO,   KC_NO,           KC_NO,               KC_NO,
-        LGUI(KC_RBRC), LALT(LGUI(KC_RGHT)),
+        KC_NO,           KC_6,                KC_7,            KC_8,    KC_9,            KC_0,                KC_MINS,
+        KC_RBRC,         KC_Y,                KC_U,            KC_I,    KC_O,            KC_P,                KC_EQL,
+                         KC_H,                KC_J,            KC_K,    KC_L,            KC_SCLN,             KC_QUOT,
+        KC_BSLS,         KC_N,                KC_M,            KC_COMM, KC_DOT,          KC_SLSH,             KC_RSFT,
+                                              GUI_T(KC_LANG1), KC_NO,   KC_NO,           KC_NO,               KC_NO,
+        LGUI(KC_RBRC),   LALT(LGUI(KC_RGHT)),
         KC_PGUP,
-        KC_PGDN,       CTL_T(KC_ENT),       SFT_T(KC_SPC)
+        KC_PGDN,         CTL_T(KC_ENT),       SFT_T(KC_SPC)
     ),
 /* Keymap 1: Symbol Layer
  *
