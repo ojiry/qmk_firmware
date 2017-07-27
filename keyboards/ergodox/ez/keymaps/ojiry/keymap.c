@@ -31,7 +31,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  *                                        ,-------------.       ,-------------.
  *                                        | LTab |PPage |       | NPage| RTab |
  *                                 ,------|------|------|       |------+------+------.
- *                                 | Cmd/ |  L2/ | Home |       | PgUp |Shift/|Ctrl/ |
+ *                                 | Cmd/ |  L2/ | Home |       | PgUp |Ctrl/ |Shift/|
  *                                 |Backsp|Delete|------|       |------|Enter |Space |
  *                                 |ace   |      | End  |       | PgDn |      |      |
  *                                 `--------------------'       `--------------------'
@@ -56,7 +56,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                               GUI_T(KC_LANG1), KC_NO,   KC_NO,           KC_NO,               KC_NO,
         LGUI(KC_RBRC),   LALT(LGUI(KC_RGHT)),
         KC_PGUP,
-        KC_PGDN,         SFT_T(KC_ENT),       CTL_T(KC_SPC)
+        KC_PGDN,         CTL_T(KC_ENT),       SFT_T(KC_SPC)
     ),
 /* Keymap 1: Symbol Layer
  *
