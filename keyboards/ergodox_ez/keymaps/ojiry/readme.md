@@ -3,6 +3,5 @@
 ## Using Docker in Builds
 
 ```sh
-$ docker build -t ojiry/qmk_firmware .
-$ docker run -e keyboard=ergodox_ez -e keymap=ojiry --rm -v $('pwd'):/qmk:rw ojiry/qmk_firmware
+$ util/docker_build.sh ergodox_ez:ojiry
 ```
